@@ -1,0 +1,8 @@
+.card--position {
+  margin-bottom: 48px;
+
+  &:not(:nth-child(4n)) {
+    margin-right: 48px;
+  }
+}
+
