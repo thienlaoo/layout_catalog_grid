@@ -7,37 +7,30 @@
     height: 300px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    &--position {
+      margin-bottom: 48px;
+
+      &:not(:nth-child(4n)) {
+        margin-right: 48px;
+      }
+    }
   }
-}
 
-.catalog {
-@include gridLayout;
+  @include gridLayout;
 
-@media (max-width:488px) {
+  @media (max-width:488px) {
     grid-template-columns: repeat(1, 200px);
   }
-}
 
-.catalog {
-  @include gridLayout;
-
-@media (min-width:489px) and (max-width:768px) {
+  @media (min-width:489px) and (max-width:768px) {
     grid-template-columns: repeat(2, 200px);
   }
-}
 
-.catalog {
-  @include gridLayout;
-
-@media (min-width:769px) and (max-width:1024px) {
+  @media (min-width:769px) and (max-width:1024px) {
     grid-template-columns: repeat(3, 200px);
   }
-}
 
-.catalog {
-  @include gridLayout;
-
-@media (min-width:1024px) {
+  @media (min-width:1024px) {
     grid-template-columns: repeat(4, 200px);
   }
 }
